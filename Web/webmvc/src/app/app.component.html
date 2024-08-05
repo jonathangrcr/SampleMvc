@@ -1,0 +1,8 @@
+
+<ng-container *ngIf="pets$ | async as pets">
+  <ul>
+    @for (pet of pets; track pet) {
+      <li>{{pet}}</li>
+    }
+  </ul>
+</ng-container>
